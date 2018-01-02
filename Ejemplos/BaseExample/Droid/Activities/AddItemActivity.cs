@@ -1,12 +1,11 @@
-﻿using System;
-
-using Android.App;
-using Android.OS;
-using Android.Widget;
-using Android.Support.Design.Widget;
-
-namespace BaseExample.Droid
+﻿namespace BaseExample.Droid
 {
+    using System;
+    using Android.App;
+    using Android.OS;
+    using Android.Widget;
+    using Android.Support.Design.Widget;
+
     [Activity(Label = "AddItemActivity")]
     public class AddItemActivity : Activity
     {
@@ -19,7 +18,7 @@ namespace BaseExample.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            ViewModel = BrowseFragment.ViewModel;
+            ViewModel = MainActivity.ViewModel;
 
             // Create your application here
             SetContentView(Resource.Layout.activity_add_item);
